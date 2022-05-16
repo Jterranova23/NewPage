@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-image:url('./assets/wavesdark.svg');
+  background-size:cover;
+  color:white;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media(max-width: 1024px) {
+  body{
+    background-size: 150vh;
+  }
+}
+
+.linea{
+  margin:50px 0
+}
+.linea2{
+  margin:0 0 50px 0
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(0,-200%);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
